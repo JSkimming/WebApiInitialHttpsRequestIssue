@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace WebApiInitialHttpsRequestIssue.App_Start
+namespace WebApiInitialHttpsRequestIssue.Controllers
 {
     public class HomeController : Controller
     {
@@ -9,7 +9,7 @@ namespace WebApiInitialHttpsRequestIssue.App_Start
 
         public ActionResult Index()
         {
-            return Redirect("~/api/test");
+            return RedirectPermanent("~/api/test");
         }
     }
 }
