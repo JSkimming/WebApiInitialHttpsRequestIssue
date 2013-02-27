@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BC156B
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "CloudService.Deploy", "CloudService.Deploy\CloudService.Deploy.ccproj", "{D82AF01D-42F2-4E81-87AD-1D60BC30DDDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{A86F97E8-CAB0-4238-8621-9989EC2BD482}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A86F97E8-CAB0-4238-8621-9989EC2BD482}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A86F97E8-CAB0-4238-8621-9989EC2BD482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D82AF01D-42F2-4E81-87AD-1D60BC30DDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D82AF01D-42F2-4E81-87AD-1D60BC30DDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D82AF01D-42F2-4E81-87AD-1D60BC30DDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D82AF01D-42F2-4E81-87AD-1D60BC30DDDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
