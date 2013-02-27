@@ -108,6 +108,7 @@
   <ItemGroup>
     <Compile Include="App_Start\HomeController.cs" />
     <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Filter\RequireHttpsHandler.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
