@@ -5,16 +5,21 @@
       <Site name="Web">
         <Bindings>
           <Binding name="Endpoint1" endpointName="HttpEndpoint" />
+          <Binding name="Endpoint1" endpointName="HttpsEndpoint" />
         </Bindings>
       </Site>
     </Sites>
     <Endpoints>
       <InputEndpoint name="HttpEndpoint" protocol="http" port="80" />
+      <InputEndpoint name="HttpsEndpoint" protocol="https" port="443" certificate="selfsigned" />
     </Endpoints>
     <Imports>
       <Import moduleName="Diagnostics" />
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
     </Imports>
     <Certificates>
+      <Certificate name="selfsigned" storeLocation="LocalMachine" storeName="My" />
     </Certificates>
   </WebRole>
 </ServiceDefinition>
