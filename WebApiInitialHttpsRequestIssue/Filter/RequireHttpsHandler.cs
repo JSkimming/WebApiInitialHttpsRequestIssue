@@ -26,6 +26,8 @@ namespace WebApiInitialHttpsRequestIssue.Filter
                                   Uri.UriSchemeHttps,
                                   request.RequestUri);
 
+                MvcApplication.Log(content);
+
                 return
                     Task.FromResult(new HttpResponseMessage(HttpStatusCode.Forbidden)
                         {

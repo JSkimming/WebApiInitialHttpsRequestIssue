@@ -9,6 +9,8 @@ namespace WebApiInitialHttpsRequestIssue.Controllers
 
         public ActionResult Index()
         {
+            MvcApplication.LogFormat("Redirecting from '{0}'.", Request.Url);
+
             return RedirectPermanent("~/api/test");
         }
     }
