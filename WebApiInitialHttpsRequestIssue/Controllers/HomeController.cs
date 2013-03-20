@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
@@ -45,7 +47,8 @@ namespace WebApiInitialHttpsRequestIssue.Controllers
         {
             using (var client = GetClient(Request.Url))
             {
-                var content = new StringContent(string.Format("Here is some test data '{0}'.", Guid.NewGuid()));
+                var data = string.Format("Here is some test data '{0}'.", Guid.NewGuid());
+                var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
 
                 HttpResponseMessage responseMessage = await client.PostAsync("api/test", content);
 
